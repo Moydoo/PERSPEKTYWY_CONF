@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/basic.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>PERSPEKTYWY_CONF | Rejestracja</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+</head>
+
+<body>
+    <div class="container__main">
+        <h2 class="title">Rejestracja</h2>
+        <div class="registration__container">
+            <div class="registration__text">
+                <div class="errors"></div>
+                <div class="registration__text-photo photo-1">
+                    <img src="assets/images/2.png" alt="">
+                </div>
+                <div class="registration__text-photo photo-2">
+                    <img src="assets/images/zdj1.jpg" alt="">
+                </div>
+                <div class="registration__text-photo photo-3">
+                    <img src="assets/images/zdj2.jpg" alt="">
+                </div>
+            </div>
+            <div class="registration__form">
+                <form action="https://sheetdb.io/api/v1/uq4geqlxtgle7" method="post" id="sheetdb-form">
+                    <div class="form_field">
+                        <label class="form-label" for="imie">Imię</label>
+                        <input type="text" placeholder="Imię" name="data[Imię]" required id="imie">
+                    </div>
+                    <div class="form_field">
+                        <label class="form-label" for="nazwisko">Nazwisko</label>
+                        <input type="text" placeholder="Nazwisko" name="data[Nazwisko]" required id="nazwisko">
+                    </div>
+
+                    <div class="form_field">
+                        <label class="form-label" for="mail">E-mail</label>
+                        <input type="email" placeholder="xxx@xx.xx" name="data[Adres e-mail]" required id="mail">
+                    </div>
+                    <div class="form_field">
+                        <label class="form-label" for="remail">Powtórz E-mail</label>
+                        <input type="email" placeholder="xxx@xx.xx" name="mail" required id="remail">
+                    </div>
+
+                    <div class="form_field">
+                        <label class="form-label" for="data">Data urodzenia</label>
+                        <input type="date" name="data[Data urodzenia]" required id="data">
+                    </div>
+                    <div class="form_field">
+                        <label class="form-label" for="miasto">Miasto</label>
+                        <input type="text" name="data[Miasto]" required id="miasto" placeholder="Nazwa miasta">
+                    </div>
+                    <div class="form_field form_radio">
+                        <p class="form-label">Opcje</p>
+                        <div class="radio_field">
+                            <input type="radio" id="full" name="data[Opcja]" value="120zł" required checked>
+                            <label for="full">Cała konferencja + nocleg + wyżywienie - 120 zł</label>
+                        </div>
+                        <div class="radio_field">
+                            <input type="radio" id="half" name="data[Opcja]" value="100zł" required>
+                            <label for="half">Cała konferencja + wyżywienie - 100 zł</label>
+                        </div>
+                        <div class="radio_field">
+                            <input type="radio" id="saturday" name="data[Opcja]" value="65zł" required>
+                            <label for="saturday">Sobota + obiad - 65 zł</label>
+                        </div>
+                        <div class="radio_field">
+                            <input type="radio" id="wolo" name="data[Opcja]" value="40zł" required>
+                            <label for="wolo">Wolontariat - 40 zł</label>
+                        </div>
+                    </div>
+
+                    <div class="form_field form_radio">
+                        <p class="form-label">Wyżywienie</p>
+                        <input type="radio" id="meat" name="data[Jedzenie]" value="FULL" required checked>
+                        <label for="meat">OPCJA FULL</label>
+                        <input type="radio" id="vege" name="data[Jedzenie]" value="VEGE" required>
+                        <label for="vege">OPCA WEGE</label>
+                    </div>
+                    <button type="submit">REJESTRACJA</button>
+                </form>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="assets/images/5.png" alt="">
+        </div>
+
+
+
+
+    </div>
+    <div class="loading__container" id="loader">
+        <div class="loader">
+            <div class="lds-spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p>prosimy czekać...</p>
+        </div>
+
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <noscript>Aby poprawnie wyświetlić stronę, Twoja przeglądarka musi obsługiwać Javascript'a</noscript>
+</body>
+
+</html>

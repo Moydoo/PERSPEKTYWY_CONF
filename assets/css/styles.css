@@ -262,7 +262,7 @@ form button:hover {
     backdrop-filter: blur(3px);
     z-index: 10;
     transition: var(--transition);
-    pointer-events: none;
+    /* pointer-events: none; */
     display: grid;
     place-items: center;
     visibility: var(--loader);
@@ -278,6 +278,7 @@ form button:hover {
     padding: 2rem;
     border: var(--border);
     position: relative;
+    text-align: center;
 }
 
 .lds-spinner {

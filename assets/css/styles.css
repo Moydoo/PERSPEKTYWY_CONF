@@ -217,6 +217,7 @@ form button {
     font-size: 1.25rem;
     transition: var(--transition);
     cursor: pointer;
+    color: black;
 }
 
 form button:hover {

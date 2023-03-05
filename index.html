@@ -12,6 +12,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -52,7 +54,8 @@
 
                     <div class="form_field">
                         <label class="form-label" for="data">Data urodzenia</label>
-                        <input type="date" name="data[Data urodzenia]" required id="data" max="2017-12-31" value="rrrr-mm-dd">
+                        <input type="date" name="data[Data urodzenia]" required id="data" max="2017-12-31"
+                            value="rrrr-mm-dd">
                     </div>
                     <div class="form_field">
                         <label class="form-label" for="miasto">Miasto</label>
@@ -72,9 +75,9 @@
                             <input type="radio" id="saturday" name="data[Opcja]" value="65zł" required>
                             <label for="saturday">Sobota + obiad - 65 zł</label>
                         </div>
-                        <div class="radio_field">
-                            <input type="radio" id="wolo" name="data[Opcja]" value="40zł" required>
-                            <label for="wolo">Wolontariat - 40 zł</label>
+                        <div class="radio_field disabled">
+                            <i class='bx bx-error'></i>
+                            <p><span>WOLONTARIAT - 40zł</span> | BRAK MIEJSC</p>
                         </div>
                     </div>
 
@@ -85,7 +88,8 @@
                         <input type="radio" id="vege" name="data[Jedzenie]" value="VEGE" required>
                         <label for="vege">OPCA WEGE</label>
                     </div>
-                    <p class="form-rodo">Rejestrując się, akceptujesz nasz <a href="assets/PDF/rodo.pdf" target="_blank">REGULAMIN</a></p>
+                    <p class="form-rodo">Rejestrując się, akceptujesz nasz <a href="assets/PDF/rodo.pdf"
+                            target="_blank">REGULAMIN</a></p>
                     <button type="submit">REJESTRACJA</button>
                 </form>
             </div>
